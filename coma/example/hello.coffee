@@ -9,8 +9,9 @@ console.log  (-> 'Hello function!!!')()   # 익명함수 실행
 
 # hi함수 생성
 hi = -> 'Hi function!'
-
 console.log hi()    # hi함수 실행
+
+hi = -> 'Hi function!!'
 console.log do hi   # hi함수 실행
 
 # 인자삽입의 사용법
@@ -32,6 +33,26 @@ console.log xWing
 # squadron = 'RED'
 # xWing = squadron +5   # 구문오류 발생함.
 
+# 표현식 삽입구문을 이용한 문자열 합치기
 squadron = 'RED'
 xWing = "#{squadron}6"
 console.log xWing
+
+# arguments객체 사용법
+greeting2 = -> "Hello, #{arguments[0]}!!!"
+console.log greeting2 'coma333'
+
+# 제곱근 구하는 함수
+cube = (num) -> Math.pow num, 3
+console.log cube 3
+
+#입력값의 홀수 판단함수
+odd = (num) -> num % 2 is 1       # is는 javascript의 === 연산자로 컴파일됨.
+console.log odd 2                 # 거짖이면 false
+console.log odd 3                 # 참이면 true
+
+#다른 변수의 값을 변경.
+count = 0
+addCount = -> count++
+addCount()
+console.log count
