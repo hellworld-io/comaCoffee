@@ -17,8 +17,9 @@
 * console 에서 node명령어를 실행하여 node REPL에서 ``` require('coffee-script') ``` 를 실행하여 확인한다.
 * Error : Cannot find module 'coffee-script'가 발생하면 NODE_PATH가 제대로 설정되어 있지 않아서이다.
 
-## coffee 기본
-### coffee 명령어
+## coffeescript 기본
+
+### coffeescript 명령어
 * ``` coffee hello.coffee ``` 명령어를 이용하여 실행.
 * coffee -h
 ```
@@ -40,5 +41,23 @@
 	-v, --version      display the version number
 	-w, --watch        watch scripts for changes and rerun commands (변경사항을 나타내고 재컴파일한다.)
 ```
+
+## 함수
+
+### 함수의 정의
+* coffeescript는 함수의 마지막 표현을 자동으로 반환하게 되어 있다.
+* 명시적으로 return을 사용할 수 있지만 옵션
+* 프로그램의 흐름을 크게 벗어나지 않는다면 return 키워드 없이 사용하는 것이 일반적이다.
+* 아무것도 반활할 값이 없으면 return 만 사용.
+* 함수 인자가 없을 때를 제외하고는 보통 함수 호출 시에 괄호를 생략한다.
+* coffeescript의 삽입문법을 사용하는 방법
+	* "" 안에 삽입문법을 작성
+	* "#{subject}"
+* + 연산자는 공백을 분명히 
+
+
+
+
+
 
 
