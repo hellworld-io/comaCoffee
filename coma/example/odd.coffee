@@ -17,3 +17,12 @@ odd = (num) ->
 #  console.log e
 
 # odd 5
+
+odd2 = (num) =>
+    unless typeof num is 'number'
+        throw "#{num}는 숫자가 아니다."
+    unless num is Math.round num
+        throw "#{num}는 정수가 아니다."
+    unless num > 0
+        throw "#{num}는 양수가 아니다."
+    num % 2 is 1
