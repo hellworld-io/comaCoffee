@@ -39,4 +39,4 @@ fingFireAlarm = (isDrill) ->
 # dontTryThisAtHome = (noArgNoProblem) -> noArgNoProblem ?= @iHopeThisWorks()
 # 위의 두 표현은 같은 의미
 # 함수를 정의할 때 인자에 할당 표현이 있으면 해당 함수가 호출될 때 그 인자 표현식은 해당 컨텍스트에서 실행되고
-# 제알 몬조 살행된다.
+# 재일먼저 살행된다.
