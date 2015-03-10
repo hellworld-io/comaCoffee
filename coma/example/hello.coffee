@@ -1,6 +1,6 @@
 console.log 'Hello Coffee!!'
 console.log 'Watch !!!!'
-
+console.log 'aaaa'
 # 함수 예제소스
 -> 'Hello function!'                      #익명함수 생성
 
